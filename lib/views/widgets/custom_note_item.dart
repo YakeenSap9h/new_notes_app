@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class NoteViewItem extends StatelessWidget {
   const NoteViewItem({super.key});
@@ -33,7 +34,7 @@ class NoteViewItem extends StatelessWidget {
             ),
             trailing: IconButton(
               onPressed: () {},
-              icon: Icon(Icons.delete),
+              icon: Icon(FontAwesomeIcons.trash),
               color: Colors.black,
               iconSize: 34,
             ),
