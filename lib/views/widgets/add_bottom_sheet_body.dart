@@ -11,7 +11,14 @@ class AddBottomSheetBody extends StatelessWidget {
 
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 16),
-        child: Column(children: [SizedBox(height: 32), CustomTextField()]),
+        child: Column(
+          children:const  [
+            SizedBox(height: 32),
+            CustomTextField(hintText: "Title"),
+            SizedBox(height: 16),
+            CustomTextField(hintText: "Content", maxLines: 5),
+          ],
+        ),
       ),
     );
   }
