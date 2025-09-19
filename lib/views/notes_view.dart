@@ -8,18 +8,21 @@ class NotesView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: const NotesViewBody(),
+      body:  NotesViewBody(),
 
       floatingActionButton: FloatingActionButton(
+        
+        backgroundColor: Color(0xff67F0E8),
+       
         onPressed: () {
           showModalBottomSheet(
             context: context,
             builder: (context) {
-              return const AddBottomSheetBody();
+              return  AddBottomSheetBody();
             },
           );
         },
-        child: Icon(Icons.add),
+        child:  Icon(Icons.add, color: Colors.black),
       ),
     );
   }

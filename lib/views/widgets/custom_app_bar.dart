@@ -8,7 +8,7 @@ class CustomAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 24),
-      child: const Row(
+      child:  Row(
         children: [
           Text("Notes", style: TextStyle(color: Colors.white, fontSize: 28)),
           Spacer(),
