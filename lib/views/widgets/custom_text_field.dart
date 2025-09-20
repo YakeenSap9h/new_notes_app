@@ -23,6 +23,8 @@ class CustomTextField extends StatelessWidget {
         hintStyle: TextStyle(color: kPrimaryColor),
         enabledBorder: builldBorder(Colors.white),
         focusedBorder: builldBorder(kPrimaryColor),
+        errorBorder: builldBorder(Colors.red),
+        focusedErrorBorder: builldBorder(Colors.red),
       ),
     );
   }
