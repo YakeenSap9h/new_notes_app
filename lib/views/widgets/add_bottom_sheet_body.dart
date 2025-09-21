@@ -8,8 +8,8 @@ class AddBottomSheetBody extends StatelessWidget {
   const AddBottomSheetBody({super.key});
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      width: double.infinity,
+    return BlocProvider(
+      create: (context) => AddNoteCubit(),
       child: Padding(
         padding: EdgeInsets.symmetric(horizontal: 16),
         child: BlocConsumer<AddNoteCubit, AddNoteState>(
