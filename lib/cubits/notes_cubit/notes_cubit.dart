@@ -12,7 +12,7 @@ class NotesCubit extends Cubit<NotesState> {
   fetchNotes() async {
     Box notesBox = Hive.box<NoteModel>(kNotesBox);
 
-     notesList = notesBox.values.cast<NoteModel>().toList();
-   
+    notesList = notesBox.values.cast<NoteModel>().toList();
+    emit(NotesSuccess());
   }
 }
