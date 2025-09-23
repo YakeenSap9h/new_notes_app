@@ -17,9 +17,9 @@ class _NotesViewBodyState extends State<NotesViewBody> {
     super.initState();
     BlocProvider.of<NotesCubit>(context).fetchNotes();
   }
+
   @override
   Widget build(BuildContext context) {
-   
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 16),
       child: Column(
